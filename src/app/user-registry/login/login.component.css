@@ -1,0 +1,11 @@
+.btn {
+    margin-top: 20px;
+  transition: 1s;
+  background: linear-gradient(135deg, rgba(11, 218, 188), rgba(26, 83, 113));
+  padding: 10px 20px;
+  color: #fff;
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, rgba(26, 83, 113), rgba(11, 218, 188));
+}

@@ -1,0 +1,9 @@
+.btn{
+  transition: 1s;
+  background: linear-gradient(135deg, rgba(11, 218, 188), #15808a);
+  color: #fff;
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #15808a, rgba(11, 218, 188));
+}

@@ -1,0 +1,57 @@
+<div class="shadow py-3 px-5">
+  <div class="flex items-center justify-between">
+    <div class="flex gap-2">
+      <img src="assets/img/codebyters_logo.png" width="40" alt="" />
+      <div class="flex items-center rounded-full px-3 gap-1 bg-slate-100">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-4 h-4"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+          />
+        </svg>
+        <input
+          type="text"
+          class="focus:outline-none bg-transparent placeholder:text-md placeholder:font-light"
+          placeholder="Search Codebyters"
+        />
+      </div>
+    </div>
+    <nav class="flex gap-10">
+      <div *ngIf="isLogin">
+        <a routerLink="/">Home</a>
+        <a routerLink="/">Profile</a>
+        <a routerLink="/">Status</a>
+        <a routerLink="/">Projects</a>
+        <a routerLink="/">Certificates</a>
+        <a routerLink="/">Activities</a>
+        <a routerLink="/">Contact Us</a>
+        <a routerLink="/">Logout</a>
+      </div>
+      <div class="flex items-center gap-10" *ngIf="!isLogin">
+        <a routerLink="/" class="hover:text-codebyters-teal transition">Home</a>
+        <a routerLink="/" class="hover:text-codebyters-teal transition"
+          >Activities</a
+        >
+        <a routerLink="/" class="hover:text-codebyters-teal transition"
+          >Contact Us</a
+        >
+        <a routerLink="/" class="hover:text-codebyters-teal transition"
+          >Sign Up</a
+        >
+        <a
+          routerLink="/login"
+          class="btn py-2 px-6"
+          ><span>Login</span></a
+        >
+      </div>
+    </nav>
+  </div>
+</div>
