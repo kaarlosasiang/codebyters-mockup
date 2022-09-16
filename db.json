@@ -1,0 +1,44 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstname": "Kaarlo Ruy",
+      "lastname": "Sasiang",
+      "email": "karloruy.sasiang@dorsu.edu.ph",
+      "password": "test",
+      "node": 1,
+      "role": 1,
+      "points": 0,
+      "achievements": []
+    },
+    {
+        "id": 2,
+        "firstname": "John",
+        "lastname": "Doe",
+        "email": "johndoe@test.com",
+        "password": "test123",
+        "node": 2,
+        "role": 1,
+        "points": 0,
+        "achievements": []
+      }
+  ],
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Back-end",
+      "categories": [
+        "Web Developer",
+        "UI/UX Designer"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Front-end",
+      "categories": [
+        "Animator",
+        "Videographer"
+      ]
+    }
+  ]
+}

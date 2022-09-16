@@ -26,8 +26,8 @@
         />
       </div>
     </div>
-    <nav class="flex gap-10">
-      <div *ngIf="isLogin">
+    <nav>
+      <div class="flex items-center gap-10 uppercase text-sm font-semibold" *ngIf="isLogin">
         <a routerLink="/">Home</a>
         <a routerLink="/">Profile</a>
         <a routerLink="/">Status</a>
@@ -35,7 +35,7 @@
         <a routerLink="/">Certificates</a>
         <a routerLink="/">Activities</a>
         <a routerLink="/">Contact Us</a>
-        <a routerLink="/">Logout</a>
+        <a routerLink="/logout">Logout</a>
       </div>
       <div class="flex items-center gap-10 uppercase text-sm font-semibold" *ngIf="!isLogin">
         <a routerLink="/" class="hover:text-codebyters-teal transition">Home</a>

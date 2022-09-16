@@ -13,12 +13,7 @@
   </div>
   <div class="bg-white loginFormContainer flex flex-col items-center">
     <div class="flex items-center">
-      <img
-        src="assets/img/codebyters_logo.png"
-        width="40"
-        height="40"
-        alt=""
-      />
+      <img src="assets/img/codebyters_logo.png" width="40" height="40" alt="" />
       <h1 class="text-3xl font-bold">
         Codebyters <span class="font-light">Login</span>
       </h1>
@@ -36,29 +31,39 @@
         />
       </svg>
     </div>
-    <form class="w-full mt-10">
+    <form
+      #loginForm="ngForm"
+      (ngSubmit)="login(loginForm.value)"
+      class="w-full mt-10"
+    >
       <input
         type="email"
         name="email"
         class="w-full focus:outline-none border rounded-md h-12 p-3 placeholder:font-light placeholder:text-sm font-light text-md"
         placeholder="Email Address"
+        ngModel
       />
       <input
         type="password"
         name="password"
         class="mt-3 w-full focus:outline-none border rounded-md h-12 p-3 placeholder:font-light placeholder:text-sm font-light text-md"
         placeholder="Password"
+        ngModel
       />
       <button
-        class="w-full submit-btn h-12 rounded mt-5 "
-        type="button"
+        class="w-full submit-btn h-12 rounded mt-5"
+        type="submit"
       >
         Sign me in
       </button>
-      <p class="registernow-text">Not a member yet? Click <a routerLink="/register" class="text-codebyters-teal">here</a> to register</p>
+      <p class="registernow-text">
+        Not a member yet? Click
+        <a routerLink="/register" class="text-codebyters-teal">here</a> to
+        register
+      </p>
     </form>
     <div class="copyrights">
-      <hr>
+      <hr />
       <span>© Kaarlo Sasiang, All Rights Reserved 2022</span>
     </div>
   </div>
