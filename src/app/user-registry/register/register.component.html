@@ -1,0 +1,53 @@
+<app-header></app-header>
+<!-- Hero -->
+<div class="flex">
+  <div class="text-heading-color bg-slate-100 login-hero">
+    <div class="loginhero-text">
+      <h1 class="text-4xl font-bold mb-8">Sign Up Works</h1>
+      <p class="max-w-xl">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta veniam
+        porro facere, ullam perferendis quo labore, corporis, ea doloribus
+        praesentium voluptatibus eveniet rem corrupti!
+      </p>
+    </div>
+  </div>
+  <div class="bg-white loginFormContainer flex flex-col items-center">
+    <div class="flex items-center">
+      <img
+        src="../../../assets/img/codebyters_logo.png"
+        width="40"
+        height="40"
+        alt=""
+      />
+      <h1 class="text-3xl font-bold">
+        Codebyters <span class="font-light">Sign up</span>
+      </h1>
+    </div>
+    <form class="w-full mt-10">
+      <input
+        type="email"
+        name="email"
+        class="w-full focus:outline-none border rounded-md h-12 p-3 placeholder:font-light placeholder:text-sm font-light text-md"
+        placeholder="Email Address"
+      />
+      <input
+        type="password"
+        name="password"
+        class="mt-3 w-full focus:outline-none border rounded-md h-12 p-3 placeholder:font-light placeholder:text-sm font-light text-md"
+        placeholder="Password"
+      />
+      <button class="w-full submit-btn h-12 rounded mt-5" type="button">
+        Sign me in
+      </button>
+      <p class="registernow-text">
+        Already a member? Click
+        <a routerLink="/login" class="text-codebyters-teal">here</a> to
+        login
+      </p>
+    </form>
+    <div class="copyrights">
+      <hr />
+      <span>© Kaarlo Sasiang, All Rights Reserved 2022</span>
+    </div>
+  </div>
+</div>
