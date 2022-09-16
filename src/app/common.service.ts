@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 })
 export class CommonService {
   // host_url = 'http://localhost:3000';
-  host_url = 'http://my-json-server.typicode.com/kaarlosasiang/codebyters';
+  host_url = 'https://my-json-server.typicode.com/kaarlosasiang/codebyters';
 
   constructor(private http: HttpClient) {}
 
