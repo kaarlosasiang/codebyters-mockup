@@ -15,7 +15,8 @@
     background-color: #fff;
     position: absolute;
     right: 0;
-    height: calc(100vh - 65.45px);
+    max-height: calc(100vh - 65.45px);
+    overflow: scroll;
     margin-top: 1.5px;
     width: 500px;
     position: relative;
@@ -58,8 +59,7 @@
     width: 100%;
     margin: 0 60px;
     /* border-top: 1px solid black; */
-    position: absolute;
-    bottom: 10px;
+    margin-top: 50px;
     text-align: center;
   }
   

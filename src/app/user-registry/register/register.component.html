@@ -13,30 +13,68 @@
   </div>
   <div class="bg-white loginFormContainer flex flex-col items-center">
     <div class="flex items-center">
-      <img
-        src="../../../assets/img/codebyters_logo.png"
-        width="40"
-        height="40"
-        alt=""
-      />
+      <img src="assets/img/codebyters_logo.png" width="40" height="40" alt="" />
       <h1 class="text-3xl font-bold">
         Codebyters <span class="font-light">Sign up</span>
       </h1>
     </div>
     <form class="w-full mt-10">
-        <label for="" class="text-sm">Name <span class="text-red-600">*</span></label>
-      <div class="flex gap-2">
+      <label for="name" class="text-sm"
+        >Name <span class="text-red-600">*</span></label
+      >
+      <div class="flex gap-2 mb-4" id="name">
         <input
-          type="email"
+          type="text"
           name="firstname"
           class="w-full focus:outline-none border rounded-md h-10 p-3 placeholder:font-light placeholder:text-sm font-light text-md"
           placeholder="Firstname"
+          required
         />
         <input
-          type="password"
+          type="text"
           name="lastname"
           class="w-full focus:outline-none border rounded-md h-10 p-3 placeholder:font-light placeholder:text-sm font-light text-md"
           placeholder="Lastname"
+          required
+        />
+      </div>
+      <label for="email" class="text-sm"
+        >Email <span class="text-red-600">*</span></label
+      >
+      <div class="flex gap-2 mb-4">
+        <input
+          id="email"
+          type="email"
+          name="email"
+          class="w-full focus:outline-none border rounded-md h-10 p-3 placeholder:font-light placeholder:text-sm font-light text-md"
+          placeholder="Firstname"
+          required
+        />
+      </div>
+      <label for="email" class="text-sm"
+        >Password<span class="text-red-600">*</span></label
+      >
+      <div class="flex gap-2 mb-4">
+        <input
+          id="password"
+          type="password"
+          name="password"
+          class="w-full focus:outline-none border rounded-md h-10 p-3 placeholder:font-light placeholder:text-sm font-light text-md"
+          placeholder="Password"
+          required
+        />
+      </div>
+      <label for="password" class="text-sm"
+        >Re-enter Password <span class="text-red-600">*</span></label
+      >
+      <div class="flex gap-2">
+        <input
+          id="password"
+          type="password"
+          name="re-enter-password"
+          class="w-full focus:outline-none border rounded-md h-10 p-3 placeholder:font-light placeholder:text-sm font-light text-md"
+          placeholder="Re-enter Password"
+          required
         />
       </div>
       <button class="w-full submit-btn h-12 rounded mt-5" type="button">
