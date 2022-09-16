@@ -18,7 +18,11 @@
         Codebyters <span class="font-light">Sign up</span>
       </h1>
     </div>
-    <form class="w-full mt-10">
+    <form
+      class="w-full mt-10"
+      #registerForm="ngForm"
+      (ngSubmit)="registerUser(registerForm.value)"
+    >
       <label for="name" class="text-sm"
         >Name <span class="text-red-600">*</span></label
       >
@@ -29,6 +33,7 @@
           class="w-full focus:outline-none border rounded-md h-10 p-3 placeholder:font-light placeholder:text-sm font-light text-md"
           placeholder="Firstname"
           required
+          ngModel
         />
         <input
           type="text"
@@ -36,6 +41,7 @@
           class="w-full focus:outline-none border rounded-md h-10 p-3 placeholder:font-light placeholder:text-sm font-light text-md"
           placeholder="Lastname"
           required
+          ngModel
         />
       </div>
       <label for="email" class="text-sm"
@@ -49,9 +55,12 @@
           class="w-full focus:outline-none border rounded-md h-10 p-3 placeholder:font-light placeholder:text-sm font-light text-md"
           placeholder="Firstname"
           required
+          ngModel
+          pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+          (keydown.space)="$event.preventDefault()"
         />
       </div>
-      <label for="email" class="text-sm"
+      <label for="password" class="text-sm"
         >Password<span class="text-red-600">*</span></label
       >
       <div class="flex gap-2 mb-4">
@@ -62,22 +71,24 @@
           class="w-full focus:outline-none border rounded-md h-10 p-3 placeholder:font-light placeholder:text-sm font-light text-md"
           placeholder="Password"
           required
+          ngModel
         />
       </div>
-      <label for="password" class="text-sm"
+      <label for="re_enter_password" class="text-sm"
         >Re-enter Password <span class="text-red-600">*</span></label
       >
       <div class="flex gap-2">
         <input
-          id="password"
+          id="re_enter_password"
           type="password"
-          name="re-enter-password"
+          name="re_enter_password"
           class="w-full focus:outline-none border rounded-md h-10 p-3 placeholder:font-light placeholder:text-sm font-light text-md"
           placeholder="Re-enter Password"
           required
+          ngModel
         />
       </div>
-      <button class="w-full submit-btn h-12 rounded mt-5" type="button">
+      <button class="w-full submit-btn h-12 rounded mt-5" type="submit">
         Sign me in
       </button>
       <p class="registernow-text">

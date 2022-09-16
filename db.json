@@ -2,26 +2,26 @@
   "users": [
     {
       "id": 1,
-      "firstname": "Kaarlo Ruy",
-      "lastname": "Sasiang",
-      "email": "karloruy.sasiang@dorsu.edu.ph",
-      "password": "test",
+      "firstname": "codebyter",
+      "lastname": "codebyter",
+      "email": "coder@codebyters.com",
+      "password": "codebyter",
       "node": 1,
       "role": 1,
       "points": 0,
       "achievements": []
     },
     {
-        "id": 2,
-        "firstname": "John",
-        "lastname": "Doe",
-        "email": "johndoe@test.com",
-        "password": "test123",
-        "node": 2,
-        "role": 1,
-        "points": 0,
-        "achievements": []
-      }
+      "id": 2,
+      "firstname": "John",
+      "lastname": "Doe",
+      "email": "johndoe@test.com",
+      "password": "test123",
+      "node": 2,
+      "role": 1,
+      "points": 0,
+      "achievements": []
+    }
   ],
   "nodes": [
     {
