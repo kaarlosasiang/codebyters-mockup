@@ -24,25 +24,27 @@
       </h1>
     </div>
     <form class="w-full mt-10">
-      <input
-        type="email"
-        name="email"
-        class="w-full focus:outline-none border rounded-md h-12 p-3 placeholder:font-light placeholder:text-sm font-light text-md"
-        placeholder="Email Address"
-      />
-      <input
-        type="password"
-        name="password"
-        class="mt-3 w-full focus:outline-none border rounded-md h-12 p-3 placeholder:font-light placeholder:text-sm font-light text-md"
-        placeholder="Password"
-      />
+        <label for="" class="text-sm">Name <span class="text-red-600">*</span></label>
+      <div class="flex gap-2">
+        <input
+          type="email"
+          name="firstname"
+          class="w-full focus:outline-none border rounded-md h-10 p-3 placeholder:font-light placeholder:text-sm font-light text-md"
+          placeholder="Firstname"
+        />
+        <input
+          type="password"
+          name="lastname"
+          class="w-full focus:outline-none border rounded-md h-10 p-3 placeholder:font-light placeholder:text-sm font-light text-md"
+          placeholder="Lastname"
+        />
+      </div>
       <button class="w-full submit-btn h-12 rounded mt-5" type="button">
         Sign me in
       </button>
       <p class="registernow-text">
         Already a member? Click
-        <a routerLink="/login" class="text-codebyters-teal">here</a> to
-        login
+        <a routerLink="/login" class="text-codebyters-teal">here</a> to login
       </p>
     </form>
     <div class="copyrights">
