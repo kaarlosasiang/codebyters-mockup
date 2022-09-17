@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { CommonService } from 'src/app/common.service';
 @Component({
   selector: 'app-register',
@@ -13,13 +14,14 @@ export class RegisterComponent implements OnInit {
     "lastname": "",
     "email": "",
     "password": "",
+    "profile_img": "",
     "node": 0,
     "role": 0,
     "points": 0,
     "achievements": []
   }
 
-  constructor(private commonService: CommonService) { }
+  constructor(private commonService: CommonService, private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -42,6 +44,7 @@ export class RegisterComponent implements OnInit {
             "lastname": data.lastname,
             "email": data.email,
             "password": data.password,
+            "profile_img" : "assets/img/default-profile.jpg",
             "node": 0,
             "role": 0,
             "points": 0,
@@ -50,6 +53,7 @@ export class RegisterComponent implements OnInit {
           console.log(this.newUSerModel);
           this.commonService.registerUser(path, this.newUSerModel).subscribe((res: any) => {
             console.log(res);
+            this.router.navigate(["login"])
           })
         })
 

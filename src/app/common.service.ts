@@ -11,7 +11,7 @@ export class CommonService {
   constructor(private http: HttpClient) { }
 
   loginUser(path: string) {
-    return this.http.get(this.host_url + path);
+    return this.http.get(this.localhost_url + path);
   }
 
   // registerUser(path: string, details: {}) {
@@ -33,6 +33,6 @@ export class CommonService {
   }
 
   getUserDetails(path: string) {
-    return this.http.get(this.host_url + path);
+    return this.http.get(this.localhost_url + path);
   }
 }

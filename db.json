@@ -6,6 +6,7 @@
       "lastname": "codebyter",
       "email": "coder@codebyters.com",
       "password": "codebyter",
+      "profile_img": "assets/img/default-profile.jpg",
       "node": 1,
       "role": 1,
       "points": 0,
@@ -13,17 +14,61 @@
     },
     {
       "id": 2,
-      "firstname": "John",
-      "lastname": "Doe",
-      "email": "johndoe@test.com",
+      "firstname": "Kaarlo",
+      "lastname": "Sasiang",
+      "email": "kaarlo@test.com",
       "password": "test123",
+      "profile_img": "assets/img/profile-img.jpg",
+      "node": 1,
+      "role": 0,
+      "points": 50,
+      "achievements": []
+    },
+    {
+      "id": 3,
+      "firstname": "Jane",
+      "lastname": "Doe",
+      "email": "janedoe@gmail.com",
+      "password": "test",
+      "profile_img": "assets/img/default-profile.jpg",
       "node": 2,
-      "role": 1,
+      "role": 0,
+      "points": 30,
+      "achievements": []
+    },
+    {
+      "id": 4,
+      "firstname": "Clarence",
+      "lastname": "Japinan",
+      "email": "test@test.com",
+      "password": "test",
+      "profile_img": "assets/img/default-profile.jpg",
+      "node": 0,
+      "role": 0,
+      "points": 0,
+      "achievements": []
+    },
+    {
+      "id": 5,
+      "firstname": "James",
+      "lastname": "Reid",
+      "email": "jamesreid@gmail.com",
+      "password": "test",
+      "profile_img": "assets/img/default-profile.jpg",
+      "node": 0,
+      "role": 0,
       "points": 0,
       "achievements": []
     }
   ],
   "nodes": [
+    {
+      "id": 0,
+      "name": "To be assigned",
+      "categories": [
+        "To be assigned"
+      ]
+    },
     {
       "id": 1,
       "name": "Back-end",

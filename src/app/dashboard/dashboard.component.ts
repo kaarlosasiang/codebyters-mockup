@@ -7,7 +7,7 @@ import { CommonService } from '../common.service';
   styleUrls: ['./dashboard.component.css'],
 })
 export class DashboardComponent implements OnInit {
-  constructor(private commonService: CommonService) {}
+  constructor(private commonService: CommonService) { }
 
   currentUser = {
     id: 0,
@@ -15,11 +15,14 @@ export class DashboardComponent implements OnInit {
     lastname: '',
     email: '',
     password: '',
+    profile_img: '',
     node: 0,
     role: 0,
     points: 0,
     achievements: [],
   };
+
+  node = { node_category: '', node_role: '' };
 
   ngOnInit(): void {
     if (this.commonService.checkLogin()) {
@@ -30,9 +33,22 @@ export class DashboardComponent implements OnInit {
           for (let i = 0; i < res.length; i++) {
             if (user_id === res[i].id) {
               this.currentUser = res[i];
+            } else {
+              console.error("Error fetching user data");
             }
           }
           console.log(this.currentUser);
+          this.commonService.loginUser("/nodes").subscribe((res: any) => {
+            console.log(res);
+            for (let i = 0; i < res.length; i++) {
+              if (this.currentUser.node === res[i].id) {
+                this.node.node_category = res[i].name;
+                this.node.node_role = res[i].categories[this.currentUser.role];
+              }
+            }
+            console.log(this.node);
+
+          })
         });
       }
     }
