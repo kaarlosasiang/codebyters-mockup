@@ -6,12 +6,12 @@ import { Injectable } from '@angular/core';
 })
 export class CommonService {
   localhost_url = 'http://localhost:3000';
-  host_url = 'https://my-json-server.typicode.com/kaarlosasiang/codebyters';
+  host_url = 'https://my-json-server.typicode.com/kaarlosasiang/codebyters-mockup';
 
   constructor(private http: HttpClient) { }
 
   loginUser(path: string) {
-    return this.http.get(this.localhost_url + path);
+    return this.http.get(this.host_url + path);
   }
 
   // registerUser(path: string, details: {}) {
