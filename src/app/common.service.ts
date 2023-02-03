@@ -20,7 +20,7 @@ export class CommonService {
   // }
 
   registerUser(path: string, details: {}) {
-    return this.http.post(this.localhost_url + path, details)
+    return this.http.post(this.host_url + path, details)
   }
 
   checkLogin() {
@@ -33,6 +33,6 @@ export class CommonService {
   }
 
   getUserDetails(path: string) {
-    return this.http.get(this.localhost_url + path);
+    return this.http.get(this.host_url + path);
   }
 }
